@@ -1,0 +1,21 @@
+Extension verification
+
+1. Compiled the base with only TopBottom and SingleCaption; no ComicPanel classes.
+2. Compiled an external client against that two-format base.
+3. Added only ComicPanelMeme and ComicPanelCreator plus an extension test harness.
+4. Passed the new creator into the already compiled existing client.
+5. Verified that the original client bytecode and all base source hashes are unchanged.
+6. Re-ran the original two formats successfully.
+
+PASS: original two formats via existing client
+PASS: third format via unchanged compiled existing client
+PASS: original two formats via existing client
+
+Base source SHA-256 hashes
+Meme.java efde9b69f859932db23751d4c96b7dad3377cb927fe6cd2356221d4cb5f92eb1
+MemeCreator.java 815b88a6a37513bdc38d7f8f9c7a69cce8eeb2431584482cda61e0ea14e384ba
+MemeDrawing.java 7e4563157b3413d91cb76aae32abc71a08c3acbd1a7eea4ede0a590bb9e8f01a
+SingleCaptionCreator.java 5a453d786e382c530820a47dc06fa322c1f3e6861d66d168b57e87da9475dbca
+SingleCaptionMeme.java 3284dd822cccbef0c29aa2b163139939993b55124d258763149dff2bf9693053
+TopBottomCreator.java 45da3997a65b9378d45c503d844cd96d4de957a45e6b55c394b908811dd86a35
+TopBottomMeme.java 90c7ffee40715e8851894056aaed1c0785cbd425d993725b71aa8e1fb9cb9af9
